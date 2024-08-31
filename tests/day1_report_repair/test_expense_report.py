@@ -35,7 +35,7 @@ class TestFindProductOfTwoEntries(TestCase):
         self.assertEqual(514579, actual_result)
 
     def test_calculate_from_sample_file_two_entries(self):
-        sample_data_test_file = PROJECT_ROOT + "/day1_report_repair/day1-part1-sample-data.txt"
+        sample_data_test_file = PROJECT_ROOT + "/day1_report_repair/sample-data.txt"
         actual_result = calculate_from_file(file_name=sample_data_test_file, number_of_entries=2, desired_value=2020)
         self.assertEqual(actual_result, 514579)
 
@@ -68,6 +68,6 @@ class TestFindProductOfTwoEntries(TestCase):
         self.assertEqual(241861950, actual_result)
 
     def test_calculate_from_sample_file_three_entries(self):
-        sample_data_test_file = PROJECT_ROOT + "/day1_report_repair/day1-part1-sample-data.txt"
+        sample_data_test_file = PROJECT_ROOT + "/day1_report_repair/sample-data.txt"
         actual_result = calculate_from_file(file_name=sample_data_test_file, number_of_entries=3, desired_value=2020)
         self.assertEqual(actual_result, 241861950)

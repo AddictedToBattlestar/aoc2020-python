@@ -38,7 +38,7 @@ def calculate_from_file(file_name, number_of_entries, desired_value):
         return find_product_of_three_entries_matching_desired_value_not_found(numeric_lines, desired_value)
 
 if __name__ == '__main__':
-    part_1_result = calculate_from_file(file_name="day1_data.txt", number_of_entries=2, desired_value=2020)
+    part_1_result = calculate_from_file(file_name="data.txt", number_of_entries=2, desired_value=2020)
     print(f'The solution for Day 1, part 1 is: {part_1_result}')
-    part_2_result = calculate_from_file(file_name="day1_data.txt", number_of_entries=3, desired_value=2020)
+    part_2_result = calculate_from_file(file_name="data.txt", number_of_entries=3, desired_value=2020)
     print(f'The solution for Day 1, part 2 is: {part_2_result}')

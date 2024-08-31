@@ -1,3 +1,6 @@
+from src.utilities.file_reader import read_lines_from_file
+
+
 def parse_policy(policy):
     policy_range, character = policy.split(" ")
     min_count, max_count = map(int, policy_range.split("-"))
@@ -15,3 +18,11 @@ def get_count_of_valid_passwords(lines):
         if evaluate(line):
             valid_count += 1
     return valid_count
+
+def calculate_from_file(file_name):
+    lines = read_lines_from_file(file_name)
+    return get_count_of_valid_passwords(lines)
+
+if __name__ == '__main__':
+    part_1_result = calculate_from_file("data.txt")
+    print(f'The solution for Day 1, part 1 is: {part_1_result}')
